@@ -103,7 +103,7 @@ with tf.Session() as sess:
         x, y = generateData()
         _current_state = np.zeros((batch_size, state_size))
 
-        print("New data, epoch", epoch_idx)
+        print("New data, epoch ", epoch_idx)
 
         for batch_idx in range(num_batches):
             start_idx = batch_idx * truncated_backprop_length
